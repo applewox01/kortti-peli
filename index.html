@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="compute.js" defer></script>
+    <title>etsippä kortti</title>
+</head>
+<body>
+
+    <div id="hankaluus">
+        <h1>Sydän kortti peli</h1>
+        <p>koira on veloissa ja pelaa kortti russian roulette</p>
+        <p>hankaluustaso:</p>
+        <button onclick="aloita(10)">vauva (10 yritystä)</button>
+        <button onclick="aloita(5)">helppo (5 yritystä)</button>
+        <button onclick="aloita(2)">hankala (2 yritystä)</button>
+        <button onclick="aloita(1)">nightmare (1 yritystä)</button>
+    </div>
+
+    <div id="peli">
+        <div id="header">
+    <h1>Etsi sydän kortti</h1>
+    <p id="yritykset">Yrityksiä jäljellä: 4</p>
+    <button id="restart" onclick="restart()">Pelaa uudelleen</button>
+</div>
+    <div id="kortit">
+<!--idea: kloonaa tuo kortti taulukon pituuden kerroin. sitten laita nimi indeksin mukaan-->
+        <div class="kortti" id="kortti1" data-id="1"></div>
+
+
+    </div>
+
+    <div id="viesti">
+    </div>
+</div>
+
+    <img src="icon.PNG">
+</body>
+</html>

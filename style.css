@@ -1,0 +1,28 @@
+.kortti {
+    border-radius: 30px;
+    background-color: grey;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: red;
+    padding: 10px;
+    background-image: url(texture.PNG);
+    background-repeat: repeat;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#hankaluus {
+    border-radius: 30px;
+    background-color: grey;
+}
+
+#kortit {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
